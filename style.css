@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Body */
+.heading {
+    font-size: 70px;
+    animation: flicker 1.5s infinite alternate;
+    color:white;
+}
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: #ff0000; replace with your desired color */
+  }
+  
+
+.colors-information {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    /* border: 1px solid black; */
+    /* background: white; */
+    text-align: center;
+}
+.color{
+    color: white;
+}
+.colors-information p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+    display: inline;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #5D5D5D;
+}
+td {
+    text-align: center;
+    width: 5vw; /* Pixel (px) = (Viewport width unit (vw) * Viewport width) / 100 */
+    border: 1px solid white;
+    color: white;
+    size: 12px;
+    font-weight: 700;
+}
+
+.none {
+    border: none;
+}
+/* Colors Of The Elements*/
+
+.color1 {
+    background-color: #d2d916;
+}
+
+.color2 {
+    background-color: #737631;
+}
+
+.color3 {
+    background-color: #ffb300;
+}
+
+.color4 {
+    background-color: #8de184;
+}
+
+.color5 {
+    background-color: #802a8d;
+}
+
+.color6 {
+    background-color: #f5b659;
+}
+
+.color7 {
+    background-color: #c265af;
+}
+
+.color8 {
+    background-color: #59cf6e;
+}
+
+.color9 {
+    background-color: #868f8f;
+}
+
+.color10{
+    background-color: #65bbd6;
+}
+
+.color11{
+    background-color: #859998;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    0%, 17%, 33%, 50%, 66%, 83%, 100% {
+  
+        text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0fa,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        0 0 70px #0fa,
+        0 0 110px #0fa,
+        0 0 160px #0fa
+    }
+    
+    20%, 40%, 60%, 80% {        
+        text-shadow: none;
+    }    
+}
+  
+
+/* Hovering Tags */
+
+td:hover {
+    filter: brightness(200%);
+    color: black;
+}
+
+.color:hover {
+    filter: brightness(200%);
+    color: black;
+}
